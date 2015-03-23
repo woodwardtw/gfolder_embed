@@ -25,14 +25,15 @@
  	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
  
-//[gdrive id="YourFolderID" style="Grid or List"]
+//[gdrive id="YourFolderID" style="Grid or List" width="" height=""]
  
 function gdrive_shortcode($atts, $content=null) {
     $a = shortcode_atts( array(
          'id' => '',
          'style' => 'list',
+         'width' => '100%',
+         'height' => '500px',
     ), $atts); 
-	return '<iframe src="https://drive.google.com/embeddedfolderview?id=' . $a['id'] . '#' . $a['style'] . '" frameborder="0" width="100%" height="500px" scrolling="auto"> </iframe>';
+	return '<iframe src="https://drive.google.com/embeddedfolderview?id=' . $a['id'] . '#' . $a['style'] . '" frameborder="0" width="' . $a['width'] . '" height="' . $a['height'].'" scrolling="auto"> </iframe>';
 }
 add_shortcode( 'gdrive', 'gdrive_shortcode' );
-?>
