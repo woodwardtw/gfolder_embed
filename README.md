@@ -1,4 +1,10 @@
 # gfolder_embed
 WordPress shortcode for embedding Google Folders
 
-Pretty simple plugin to allow users in a multisite to embed Google Folders with a shortcode.
+Options include a list or grid style and you can manually set the height/width.
+
+Grid Style
+[gdrive id="YourFolderID" style="Grid" width="" height=""]
+
+List Style
+[gdrive id="YourFolderID" style="List" width="" height=""]
