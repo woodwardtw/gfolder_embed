@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Embed a Google Drive Folder w the unique folder ID 
- * Plugin URI: http://bionicteaching.com
+ * Plugin URI: https://github.com/woodwardtw/gfolder_embed
  * Description: Allows an embed of the Google Drive Folder via the unique ID. You can also define a list or grid view via the style parameter.
  * Version: 1.1
  * Author: Tom Woodward
