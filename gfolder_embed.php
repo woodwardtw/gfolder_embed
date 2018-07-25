@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Embed a Google Drive Folder w the unique folder ID 
  * Plugin URI: https://github.com/woodwardtw/gfolder_embed
- * Description: Embed your Google Drive Folder via the unique ID. You can also define a list or grid view via the style parameter. [gdrive id="YourFolderID" style="Grid or List" width="" height=""]
+ * Description: Embed your Google Drive Folder via the unique ID. You can also define a list or grid view via the style parameter. [gdrive id="YourFolderID" style="grid or list" width="" height=""]
  * Version: 1.1
  * Author: Tom Woodward
  * Author URI: http://bionicteaching.com
@@ -25,9 +25,12 @@
  	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
  
-//[gdrive id="YourFolderID" style="Grid or List" width="" height=""]
+//[gdrive id="YourFolderID" style="[grid OR list]" width="" height=""]
  
 function gdrive_shortcode($atts, $content=null) {
+	// Normalize attribute keys, lowercase
+    $atts = array_change_key_case( (array)$atts, CASE_LOWER );
+
     $a = shortcode_atts( array(
          'id' => '',
          'style' => 'list',
