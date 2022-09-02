@@ -3,7 +3,7 @@ WordPress shortcode for embedding Google Folders
 
 Options include a list or grid style and you can manually set the height/width. 
 
-An optional resourckey parameter was added based on (this issue)[https://github.com/woodwardtw/gfolder_embed/issues/5].
+An optional resourckey parameter was added based on [this issue](https://github.com/woodwardtw/gfolder_embed/issues/5).
 
 Still can't seem to sort because Google doesn't want me to.
 
