@@ -27,7 +27,7 @@
  
 //[gdrive id="YourFolderID" style="Grid or List" width="" height=""]
  
-function gdrive_shortcode($atts, $content=null) {
+function gdrive_shortcode($atts) {
     $rkey = '';
     $a = shortcode_atts( array(
          'id' => '',
